@@ -17,6 +17,7 @@
 		E0ED91DE1E75EF34004CDCAB /* MyFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91DD1E75EF34004CDCAB /* MyFlipTests.swift */; };
 		E0ED91E91E75F37F004CDCAB /* StoneColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91E81E75F37F004CDCAB /* StoneColor.swift */; };
 		E0ED91EB1E75F3FF004CDCAB /* Stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91EA1E75F3FF004CDCAB /* Stone.swift */; };
+		E0ED91ED1E75F757004CDCAB /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91EC1E75F757004CDCAB /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E0ED91DF1E75EF34004CDCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0ED91E81E75F37F004CDCAB /* StoneColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneColor.swift; sourceTree = "<group>"; };
 		E0ED91EA1E75F3FF004CDCAB /* Stone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stone.swift; sourceTree = "<group>"; };
+		E0ED91EC1E75F757004CDCAB /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				E0ED91D41E75EF34004CDCAB /* Info.plist */,
 				E0ED91E81E75F37F004CDCAB /* StoneColor.swift */,
 				E0ED91EA1E75F3FF004CDCAB /* Stone.swift */,
+				E0ED91EC1E75F757004CDCAB /* Board.swift */,
 			);
 			path = MyFlip;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				E0ED91EB1E75F3FF004CDCAB /* Stone.swift in Sources */,
 				E0ED91C91E75EF34004CDCAB /* GameScene.swift in Sources */,
+				E0ED91ED1E75F757004CDCAB /* Board.swift in Sources */,
 				E0ED91CB1E75EF34004CDCAB /* GameViewController.swift in Sources */,
 				E0ED91C31E75EF34004CDCAB /* AppDelegate.swift in Sources */,
 				E0ED91E91E75F37F004CDCAB /* StoneColor.swift in Sources */,

@@ -13,6 +13,8 @@ class GameScene: SKScene {
     
     var rows = [[Stone]]()
     
+    var board: Board!
+    
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
@@ -30,7 +32,7 @@ class GameScene: SKScene {
         gameBoard.zPosition = 2
         addChild(gameBoard)
         
-        //board = Board()
+        board = Board()
         
         // 1: set up the constants for positioning
         
@@ -38,12 +40,12 @@ class GameScene: SKScene {
         let offsetY = -281
         let stoneSize = 80
         
-        for row in 0 ..< 8 {
+        for row in 0 ..< Board.size {
             
             // 2: count from 0 to 7, creating a new array of stones
             
             var colArray = [Stone]()
-            for col in 0 ..< 8 {
+            for col in 0 ..< Board.size {
                 
                 // 3: create from 0 to 7, creating a new stone object
                 
@@ -65,7 +67,7 @@ class GameScene: SKScene {
                 colArray.append(stone)
             }
             
-//            board.rows.append([StoneColor](repeating: .empty, count: Board.size))
+            board.rows.append([StoneColor](repeating: .empty, count: Board.size))
             
             // 7: add each column to the rows array
             
@@ -77,6 +79,12 @@ class GameScene: SKScene {
         rows[4][4].setPlayer(.black)
         rows[3][4].setPlayer(.white)
         rows[3][3].setPlayer(.black)
+        
+        board.rows[4][3] = .white
+        board.rows[4][4] = .black
+        board.rows[3][4] = .white
+        board.rows[3][3] = .black
+        
     }
 
     
