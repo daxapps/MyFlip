@@ -10,8 +10,9 @@ import UIKit
 
 class Board: NSObject {
 
-    static let size = 8
+    var currentplayer = Player.allPlayers[0]
     
+    static let size = 8    
     var rows = [[StoneColor]]()
     
 }
