@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E0ED91C31E75EF34004CDCAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91C21E75EF34004CDCAB /* AppDelegate.swift */; };
 		E0ED91C51E75EF34004CDCAB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91C41E75EF34004CDCAB /* GameScene.sks */; };
-		E0ED91C71E75EF34004CDCAB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91C61E75EF34004CDCAB /* Actions.sks */; };
 		E0ED91C91E75EF34004CDCAB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91C81E75EF34004CDCAB /* GameScene.swift */; };
 		E0ED91CB1E75EF34004CDCAB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91CA1E75EF34004CDCAB /* GameViewController.swift */; };
 		E0ED91CE1E75EF34004CDCAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91CC1E75EF34004CDCAB /* Main.storyboard */; };
@@ -32,7 +31,6 @@
 		E0ED91BF1E75EF34004CDCAB /* MyFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0ED91C21E75EF34004CDCAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0ED91C41E75EF34004CDCAB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		E0ED91C61E75EF34004CDCAB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		E0ED91C81E75EF34004CDCAB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E0ED91CA1E75EF34004CDCAB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E0ED91CD1E75EF34004CDCAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			children = (
 				E0ED91C21E75EF34004CDCAB /* AppDelegate.swift */,
 				E0ED91C41E75EF34004CDCAB /* GameScene.sks */,
-				E0ED91C61E75EF34004CDCAB /* Actions.sks */,
 				E0ED91C81E75EF34004CDCAB /* GameScene.swift */,
 				E0ED91CA1E75EF34004CDCAB /* GameViewController.swift */,
 				E0ED91CC1E75EF34004CDCAB /* Main.storyboard */,
@@ -194,7 +191,6 @@
 				E0ED91C51E75EF34004CDCAB /* GameScene.sks in Resources */,
 				E0ED91D01E75EF34004CDCAB /* Assets.xcassets in Resources */,
 				E0ED91D31E75EF34004CDCAB /* LaunchScreen.storyboard in Resources */,
-				E0ED91C71E75EF34004CDCAB /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +420,7 @@
 				E0ED91E41E75EF34004CDCAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0ED91E51E75EF34004CDCAB /* Build configuration list for PBXNativeTarget "MyFlipTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +429,7 @@
 				E0ED91E71E75EF34004CDCAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
