@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import GameplayKit
 
-class Board: NSObject {
+class Board: NSObject, GKGameModel {
     
     static let size = 8
     
     static let moves = [Move(row: -1, col: -1), Move(row: 0, col: -1), Move(row: 1, col: -1), Move(row: -1, col: 0),Move(row: 1, col: 0), Move(row: -1, col: 1), Move(row: 0, col: 1), Move(row: 1, col: 1)]
     
     var currentPlayer = Player.allPlayers[0]
+    
+    var players: [GKGameModelPlayer]? {
+        return Player.allPlayers
+    }
+    var activePlayer: GKGameModelPlayer? {
+        return currentPlayer
+    }
     
     var rows = [[StoneColor]]()
     
@@ -125,4 +133,89 @@ class Board: NSObject {
         // 10: send back the list of captured stones
         return didCapture
     }
+    
+    func getScores() -> (black: Int, white: Int) {
+        
+        var black = 0
+        var white = 0
+        
+        rows.forEach {
+            
+            $0.forEach {
+                
+                if $0 == .black {
+                    black += 1
+                    
+                } else if $0 == .white {
+                    white += 1
+                }
+            }
+        }
+        return (black, white)
+    }
+    
+    func isWin(for player: GKGameModelPlayer) -> Bool {
+        
+        guard let playerObject = player as? Player else { return false }
+        
+        let scores = getScores()
+        
+        if playerObject.stoneColor == .black {
+            
+            return scores.black > scores.white + 10
+            
+        } else {
+            return scores.white > scores.black + 10
+        }
+    }
+    
+    func gameModelUpdates(for player: GKGameModelPlayer) -> [GKGameModelUpdate]? {
+        
+        // safely unwrap the player object
+        guard let playerObject = player as? Player else { return nil }
+        
+        // if the game is over exit now
+        if isWin(for: playerObject) || isWin(for: playerObject.opponent) { return nil }
+        
+        // if we're still here prepare to send back a list of moves
+        var moves = [Move]()
+        
+        // try every column in every row
+        for row in 0 ..< Board.size {
+            for col in 0 ..< Board.size {
+                
+                if canMoveIn(row: row, col: col) {
+                    
+                    // this move is possible; add it to the list
+                    moves.append(Move(row: row, col: col))
+                }
+            }
+        }
+        return moves
+    }
+    
+    func apply(_ gameModelUpdate: GKGameModelUpdate) {
+        
+        guard let move = gameModelUpdate as? Move else { return }
+        
+        _ = makeMove(player: currentPlayer, row: move.row, col: move.col)
+        
+        currentPlayer = currentPlayer.opponent
+    }
+    
+    func setGameModel(_ gameModel: GKGameModel) {
+        
+        guard let board = gameModel as? Board else { return }
+        
+        currentPlayer = board.currentPlayer
+        rows = board.rows
+    }
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        
+        let copy = Board()
+        copy.setGameModel(self)
+        return copy
+    }
+    
 }

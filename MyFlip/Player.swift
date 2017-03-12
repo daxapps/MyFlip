@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import GameplayKit
 
-class Player: NSObject {
+
+class Player: NSObject, GKGameModelPlayer {
     
     var playerId: Int
     
