@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0ED91C31E75EF34004CDCAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91C21E75EF34004CDCAB /* AppDelegate.swift */; };
+		E0ED91C51E75EF34004CDCAB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91C41E75EF34004CDCAB /* GameScene.sks */; };
+		E0ED91C71E75EF34004CDCAB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91C61E75EF34004CDCAB /* Actions.sks */; };
+		E0ED91C91E75EF34004CDCAB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91C81E75EF34004CDCAB /* GameScene.swift */; };
+		E0ED91CB1E75EF34004CDCAB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91CA1E75EF34004CDCAB /* GameViewController.swift */; };
+		E0ED91CE1E75EF34004CDCAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91CC1E75EF34004CDCAB /* Main.storyboard */; };
+		E0ED91D01E75EF34004CDCAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91CF1E75EF34004CDCAB /* Assets.xcassets */; };
+		E0ED91D31E75EF34004CDCAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ED91D11E75EF34004CDCAB /* LaunchScreen.storyboard */; };
+		E0ED91DE1E75EF34004CDCAB /* MyFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED91DD1E75EF34004CDCAB /* MyFlipTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0ED91DA1E75EF34004CDCAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0ED91B71E75EF34004CDCAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0ED91BE1E75EF34004CDCAB;
+			remoteInfo = MyFlip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0ED91BF1E75EF34004CDCAB /* MyFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0ED91C21E75EF34004CDCAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0ED91C41E75EF34004CDCAB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E0ED91C61E75EF34004CDCAB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		E0ED91C81E75EF34004CDCAB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E0ED91CA1E75EF34004CDCAB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E0ED91CD1E75EF34004CDCAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0ED91CF1E75EF34004CDCAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0ED91D21E75EF34004CDCAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0ED91D41E75EF34004CDCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0ED91D91E75EF34004CDCAB /* MyFlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFlipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0ED91DD1E75EF34004CDCAB /* MyFlipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlipTests.swift; sourceTree = "<group>"; };
+		E0ED91DF1E75EF34004CDCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0ED91BC1E75EF34004CDCAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0ED91D61E75EF34004CDCAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0ED91B61E75EF34004CDCAB = {
+			isa = PBXGroup;
+			children = (
+				E0ED91C11E75EF34004CDCAB /* MyFlip */,
+				E0ED91DC1E75EF34004CDCAB /* MyFlipTests */,
+				E0ED91C01E75EF34004CDCAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0ED91C01E75EF34004CDCAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0ED91BF1E75EF34004CDCAB /* MyFlip.app */,
+				E0ED91D91E75EF34004CDCAB /* MyFlipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0ED91C11E75EF34004CDCAB /* MyFlip */ = {
+			isa = PBXGroup;
+			children = (
+				E0ED91C21E75EF34004CDCAB /* AppDelegate.swift */,
+				E0ED91C41E75EF34004CDCAB /* GameScene.sks */,
+				E0ED91C61E75EF34004CDCAB /* Actions.sks */,
+				E0ED91C81E75EF34004CDCAB /* GameScene.swift */,
+				E0ED91CA1E75EF34004CDCAB /* GameViewController.swift */,
+				E0ED91CC1E75EF34004CDCAB /* Main.storyboard */,
+				E0ED91CF1E75EF34004CDCAB /* Assets.xcassets */,
+				E0ED91D11E75EF34004CDCAB /* LaunchScreen.storyboard */,
+				E0ED91D41E75EF34004CDCAB /* Info.plist */,
+			);
+			path = MyFlip;
+			sourceTree = "<group>";
+		};
+		E0ED91DC1E75EF34004CDCAB /* MyFlipTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0ED91DD1E75EF34004CDCAB /* MyFlipTests.swift */,
+				E0ED91DF1E75EF34004CDCAB /* Info.plist */,
+			);
+			path = MyFlipTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0ED91BE1E75EF34004CDCAB /* MyFlip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0ED91E21E75EF34004CDCAB /* Build configuration list for PBXNativeTarget "MyFlip" */;
+			buildPhases = (
+				E0ED91BB1E75EF34004CDCAB /* Sources */,
+				E0ED91BC1E75EF34004CDCAB /* Frameworks */,
+				E0ED91BD1E75EF34004CDCAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFlip;
+			productName = MyFlip;
+			productReference = E0ED91BF1E75EF34004CDCAB /* MyFlip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0ED91D81E75EF34004CDCAB /* MyFlipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0ED91E51E75EF34004CDCAB /* Build configuration list for PBXNativeTarget "MyFlipTests" */;
+			buildPhases = (
+				E0ED91D51E75EF34004CDCAB /* Sources */,
+				E0ED91D61E75EF34004CDCAB /* Frameworks */,
+				E0ED91D71E75EF34004CDCAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0ED91DB1E75EF34004CDCAB /* PBXTargetDependency */,
+			);
+			name = MyFlipTests;
+			productName = MyFlipTests;
+			productReference = E0ED91D91E75EF34004CDCAB /* MyFlipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0ED91B71E75EF34004CDCAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jason Crawford";
+				TargetAttributes = {
+					E0ED91BE1E75EF34004CDCAB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EN498SV6Q8;
+						ProvisioningStyle = Automatic;
+					};
+					E0ED91D81E75EF34004CDCAB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EN498SV6Q8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0ED91BE1E75EF34004CDCAB;
+					};
+				};
+			};
+			buildConfigurationList = E0ED91BA1E75EF34004CDCAB /* Build configuration list for PBXProject "MyFlip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0ED91B61E75EF34004CDCAB;
+			productRefGroup = E0ED91C01E75EF34004CDCAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0ED91BE1E75EF34004CDCAB /* MyFlip */,
+				E0ED91D81E75EF34004CDCAB /* MyFlipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0ED91BD1E75EF34004CDCAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0ED91CE1E75EF34004CDCAB /* Main.storyboard in Resources */,
+				E0ED91C51E75EF34004CDCAB /* GameScene.sks in Resources */,
+				E0ED91D01E75EF34004CDCAB /* Assets.xcassets in Resources */,
+				E0ED91D31E75EF34004CDCAB /* LaunchScreen.storyboard in Resources */,
+				E0ED91C71E75EF34004CDCAB /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0ED91D71E75EF34004CDCAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0ED91BB1E75EF34004CDCAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0ED91C91E75EF34004CDCAB /* GameScene.swift in Sources */,
+				E0ED91CB1E75EF34004CDCAB /* GameViewController.swift in Sources */,
+				E0ED91C31E75EF34004CDCAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0ED91D51E75EF34004CDCAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0ED91DE1E75EF34004CDCAB /* MyFlipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0ED91DB1E75EF34004CDCAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0ED91BE1E75EF34004CDCAB /* MyFlip */;
+			targetProxy = E0ED91DA1E75EF34004CDCAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0ED91CC1E75EF34004CDCAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0ED91CD1E75EF34004CDCAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0ED91D11E75EF34004CDCAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0ED91D21E75EF34004CDCAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0ED91E01E75EF34004CDCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0ED91E11E75EF34004CDCAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0ED91E31E75EF34004CDCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EN498SV6Q8;
+				INFOPLIST_FILE = MyFlip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyFlip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0ED91E41E75EF34004CDCAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EN498SV6Q8;
+				INFOPLIST_FILE = MyFlip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyFlip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E0ED91E61E75EF34004CDCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EN498SV6Q8;
+				INFOPLIST_FILE = MyFlipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyFlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFlip.app/MyFlip";
+			};
+			name = Debug;
+		};
+		E0ED91E71E75EF34004CDCAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EN498SV6Q8;
+				INFOPLIST_FILE = MyFlipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyFlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFlip.app/MyFlip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0ED91BA1E75EF34004CDCAB /* Build configuration list for PBXProject "MyFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0ED91E01E75EF34004CDCAB /* Debug */,
+				E0ED91E11E75EF34004CDCAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0ED91E21E75EF34004CDCAB /* Build configuration list for PBXNativeTarget "MyFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0ED91E31E75EF34004CDCAB /* Debug */,
+				E0ED91E41E75EF34004CDCAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0ED91E51E75EF34004CDCAB /* Build configuration list for PBXNativeTarget "MyFlipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0ED91E61E75EF34004CDCAB /* Debug */,
+				E0ED91E71E75EF34004CDCAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0ED91B71E75EF34004CDCAB /* Project object */;
+}
