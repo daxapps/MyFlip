@@ -75,4 +75,54 @@ class Board: NSObject {
         if col >= Board.size { return false }
         return true
     }
+    
+    func makeMove(player: Player, row: Int, col: Int) -> [Move] {
+        // 1: create an array to hold all captured stones
+        var didCapture = [Move]()
+        
+        // 2: place a stone in the requested position
+        rows[row][col] = player.stoneColor
+        didCapture.append(Move(row: row, col: col))
+        
+        for move in Board.moves {
+            
+            // 3: look in this direction for captured stones
+            var mightCapture = [Move]()
+            var currentRow = row
+            var currentCol = col
+            
+            // 4: count from here up to the edge of the board, applying our move each time
+            for _ in 0 ..< Board.size {
+                currentRow += move.row
+                currentCol += move.col
+                
+                // 5: make sure this is a sensible position to move to
+                guard isInBounds(row: currentRow, col: currentCol)
+                    else { break }
+                let stone = rows[currentRow][currentCol]
+                if stone == player.opponent.stoneColor {
+                    
+                    // 6: we found an enemy stone – add it to the list of possible captures
+                    mightCapture.append(Move(row: currentRow, col:
+                        currentCol))
+                } else if stone == player.stoneColor {
+                    
+                    // 7: we found one of our stones - add the mightCapture array to didCapture
+                    didCapture.append(contentsOf: mightCapture)
+                    
+                    // 8: change all stones to the player's color, then exit the loop because we're finished in this direction
+                    mightCapture.forEach {
+                        rows[$0.row][$0.col] = player.stoneColor
+                    }
+                    break } else {
+                    
+                    // 9: we found something else; bail out
+                    break
+                }
+            }
+        }
+        
+        // 10: send back the list of captured stones
+        return didCapture
+    }
 }
