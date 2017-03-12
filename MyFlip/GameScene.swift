@@ -90,6 +90,41 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        // 1: unwrap the first touch
+        guard let touch = touches.first else { return }
+        
+        // 2: find the game board, or return if it somehow couldn't be found
+        guard let gameBoard = childNode(withName: "board") else { return }
+        
+        // 3: figure out where on the game board the touch landed.
+        let location = touch.location(in: gameBoard)
+        
+        // 4: pull out an array of all nodes at that location
+        let nodesAtPoint = nodes(at: location)
+        
+        // 5: filter out all nodes that aren't stones
+        let tappedStones = nodesAtPoint.filter { $0 is Stone }
+        
+        // 6: if no stone was tapped, bail out
+        guard tappedStones.count > 0 else { return }
+        let tappedStone = tappedStones[0] as! Stone
+        
+        // 7: pass the tapped stone's row and column into our new canMoveIn() method
+        if board.canMoveIn(row: tappedStone.row, col: tappedStone.col) {
+            
+            // 8: print a message if the move is legal
+            print("Move is legal")
+            
+//            makeMove(row: tappedStone.row, col: tappedStone.col)
+//            
+//            if board.currentPlayer.stoneColor == .white {
+//                makeAIMove()
+//            }
+            
+        } else {
+            
+            print("Move is illegal")
+        }
     }
     
 }
